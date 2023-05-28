@@ -1,0 +1,350 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/*Inicio*/ 
+
+.menu {
+    background-color: black;
+    padding: 5px;
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.menu ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: flex-end;
+    color: white;
+}
+
+.menu ul li {
+    /*display: inline; */
+    padding: 10px;
+}
+
+.menu img {
+    text-decoration: none;
+    font-size: 20px;
+    padding: 5px;
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+    margin-top: 5px;
+}
+
+.menu ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+} 
+.menu a:hover{
+    background-color: white;
+    transition: 1s;
+    border-radius: 5px;
+    color: black;
+    padding: 5pxd;
+}
+
+
+/*Contenido Principal*/
+
+.portada{
+    width: 100%;
+    height: 300px;
+    background-color: black;
+    text-align: center;
+}
+.portada img{
+    width: 100%;
+    height: 100%;
+    object-position: 0%;
+}
+
+h2{
+    text-align: center;
+    padding: 20px 0px;
+    margin-top: 40px;
+    font-family: 'Roboto';
+}
+
+/*Ingresos*/
+
+.cards{
+    background-color: white;
+    padding: 50px 15px;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+}
+.cards_body img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border: 2px solid black;
+}
+
+.cards_body{
+    display:inline-block;
+    width: 20%;
+    text-align: left;
+    margin: 10px;
+}
+
+.cards_body h4 , .cards_body p {
+    padding: 20px;
+    text-align: center;
+}
+
+/*Categorias*/
+
+.cajas{
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-evenly;
+}
+.caja img {
+    width: 600px;
+    height: 400px;
+    object-fit: cover;
+    border: 2px solid black;
+    flex-direction: row;
+}
+
+.caja h4{
+    padding: 10px;
+    border-bottom: 10px;
+    position: relative;
+    margin-top: -100px;
+    color:white;
+    background-color: rgba(0, 89, 255, 0.836);
+    width: 100px;
+    border-radius: 20px;
+}
+
+/*Proyectos*/
+
+
+.img-proyec{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 300px);
+    grid-template-areas: 
+    'area1 area2'
+    'area3 area4'
+    ;
+    gap: 15px;
+    padding: 40px;
+    align-items: center;
+}
+
+.n1{
+    grid-area: area1;
+}
+.n2{
+    grid-area: area2;
+}
+.n3{
+    grid-area: area3;
+}
+.n4{
+    grid-area: area4;
+}
+.proyec{
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: solid black;
+}
+
+.proyec img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+}
+
+
+/*Lista de Productos*/
+.productos{
+    text-align: center;
+    padding: 20px 0px;
+    margin-top: 40px;
+    font-family: 'Roboto';
+}
+.grilla{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 300px);
+    grid-template-areas: 
+    'area1 area4 area7'
+    'area2 area5 area8'
+    'area3 area6 area9'
+    ;
+    gap: 15px;
+    padding: 15px;
+    align-items: center;
+}
+
+
+.g1{
+    grid-area: area1;
+}
+.g2{
+    grid-area: area2;
+}
+.g3{
+    grid-area: area3;
+}
+.g4{
+    grid-area: area4;
+}
+.g5{
+    grid-area: area5;
+}
+.g6{
+    grid-area: area6;
+}
+.g7{
+    grid-area: area7;
+}
+.g8{
+    grid-area: area8;
+}
+.g9{
+    grid-area: area9;
+}
+.g10{
+    grid-area: area10;
+}
+
+.grilla_hijo {
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: solid black;
+}
+.grilla_hijo img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;    
+}
+
+/* Contacto*/
+.Formu{
+    margin: 40px;
+    text-align: center;
+    padding: 25px;
+    font-family: 'Roboto';
+}
+.Formu label{
+    margin: 10px;
+}
+/*nosotros*/
+
+.nos p, h2{
+    padding: 10px 50px;
+    margin: auto;
+    font-family: 'Roboto'
+}
+/*Footer*/
+
+
+@media only screen and (max-width:1024px){
+    .cajas{
+        gap: 10px;
+        display:flex;
+}
+.cajas img{
+    width:  450px;
+    height: 300px;
+    object-fit: cover;
+}
+}
+
+@media only screen and (max-width:768px){
+.cajas{
+    gap: 80px;
+    margin-left: 20px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.caja img {
+    width: 600px;
+    height: 500px;
+    object-fit: cover;
+    border: 2px solid black;
+}
+.cards{
+    background-color: white;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.cards_body img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border: 2px solid black;
+}
+}
+@media only screen and (max-width:480px){
+    .menu{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .menu img{
+        margin-left: 35px;
+        width: 60px;
+        height: 60px;
+    }
+    .menu ul{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .cajas{
+        margin-top: 30px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .caja img {
+        width: 300px;
+        height: 300px;
+        object-fit: cover;
+        border: 2px solid black;
+        flex-direction: row;
+    }
+    .cards{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .cards img{
+        width: 300px;
+        height: 300px;
+        object-fit: cover;
+        margin-left: -100px;
+    }
+    .cards_body h4 {
+        padding: 10px;
+        text-align: center;
+    }
+}
