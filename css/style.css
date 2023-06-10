@@ -306,6 +306,10 @@ h2 {
   font-weight: 700;
 }
 
+.Formu label {
+  margin: 10px;
+}
+
 /*nosotros*/
 .nos p, h2 {
   padding: 10px 50px;
