@@ -1,0 +1,60 @@
+.foote{
+    display: grid;
+    background-color: $main-color;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 80px);
+    grid-template-areas: 
+    'area2 area1 area1 area4'
+    'area2 area3 area area4'
+    'area2 area3 area area4'
+    'area5 area5 area5 area5'
+    ;
+    align-items: center;
+    gap: 5px;
+    margin-top: 100px;
+}
+
+
+.t1{
+    grid-area: area1;
+}
+.t2{
+    grid-area: area2;
+}
+.t3{
+    grid-area: area3;
+}
+.t4{
+    grid-area: area4;
+}
+.t5{
+    grid-area: area5;
+}
+.foot{
+color: white;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.foot img{
+    text-decoration: none;
+    font-size: 20px;
+    padding: 5px;
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+}
+
+.foot form h6{
+    margin-top: -100px;
+}
+
+.foote h6{
+    margin-top: -100px;
+}

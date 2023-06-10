@@ -1,0 +1,44 @@
+.menu {
+    background-color: $main-color;
+    font-family: $main-font;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.menu ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: flex-end;
+    color: white;
+    padding-top: 10px;
+}
+
+.menu ul li {
+    /*display: inline; */
+    padding-right: 20px;
+}
+
+.menu img {
+    text-decoration: none;
+    font-size: 20px;
+    padding: 1px;
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+    margin-top: 5px;
+}
+
+.menu ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+} 
+.menu a:hover{
+    background-color: white;
+    transition: 1s;
+    border-radius: 5px;
+    color: black;
+    padding: 2px;
+    cursor: pointer;
+}

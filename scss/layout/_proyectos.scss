@@ -1,0 +1,39 @@
+.img-proyec{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 300px);
+    grid-template-areas: 
+    'area1 area2'
+    'area3 area4'
+    ;
+    gap: 15px;
+    padding: 40px;
+    align-items: center;
+    
+        .proyec{
+        width: 100%;
+        height: 100%;
+        @include flexbox(column,center,center);
+        border: solid black;
+            img{
+                @include imagenes(100%,100%,cover);
+            transition: .3s;
+            &:hover{
+                box-shadow: 6px 6px 6px 0px;
+            }
+            }
+            &.n1{
+                grid-area: area1;
+            }
+            &.n2{
+                grid-area: area2;
+            }
+            &.n3{
+                grid-area: area3;
+            }
+            &.n4{
+                grid-area: area4;
+            }
+    }
+}
+
