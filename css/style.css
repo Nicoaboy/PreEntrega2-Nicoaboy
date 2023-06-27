@@ -127,6 +127,14 @@
   height: 100%;
 }
 
+h1 {
+  text-align: center;
+  padding: 20px 0px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 1000;
+  color: rgba(13, 109, 253, 0.8549019608);
+}
+
 h2 {
   text-align: center;
   padding: 20px 0px;
@@ -298,7 +306,7 @@ h2 {
 }
 
 /*Contacto*/
-.Formu {
+.formu {
   margin: auto;
   text-align: center;
   padding: 25px;
@@ -306,7 +314,7 @@ h2 {
   font-weight: 700;
 }
 
-.Formu label {
+.formu label {
   margin: 10px;
 }
 
