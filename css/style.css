@@ -312,10 +312,31 @@ h2 {
   padding: 25px;
   font-family: "Roboto", sans-serif;
   font-weight: 700;
+  background-color: whitesmoke;
+  border-radius: 40px;
+  width: 90%;
+  max-width: 400px;
+  box-shadow: 0 5px 10px;
 }
-
+.formu textarea {
+  border-radius: 10px;
+  box-shadow: 0 5px 10px;
+  text-align: center;
+  align-items: center;
+}
 .formu label {
   margin: 10px;
+  width: 100%;
+  align-items: center;
+}
+.formu input {
+  text-align: center;
+  align-items: center;
+  border-radius: 10px;
+  box-shadow: 0 5px 10px;
+}
+.formu button {
+  margin-top: 10px;
 }
 
 /*nosotros*/

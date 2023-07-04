@@ -5,7 +5,31 @@
     padding: 25px;
     font-family: $main-font;
     font-weight: 700;
+    background-color: whitesmoke;
+    border-radius: 40px;
+    width: 90%;
+    max-width: 400px;
+    box-shadow: 0 5px 10px;
+    textarea {
+        border-radius: 10px;
+        box-shadow: 0 5px 10px;
+        text-align: center;
+        align-items: center;
+    }
+    label {
+        margin: 10px;
+        width: 100%;
+        align-items: center;
+    }
+    input {
+    text-align: center;
+    align-items: center;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px;
+    }
+    
+    button {
+        margin-top: 10px;
+    }
 }
-.formu label{
-    margin: 10px;
-}
+
